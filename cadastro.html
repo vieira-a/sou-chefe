@@ -16,43 +16,40 @@
   <header class="cabecalho">
     <input type="text" class="barra-pesquisa" placeholder="Search">
   </header>
-
   <main class="main-cadastro">
-    <div class="nome-prato">
-      <label for="nome-prato">Nome do Prato:</label>
-      <input type="text" id="nome-prato" placeholder="Digite o nome do prato">
-    </div>
-
-    <div class="ingredientes">
-      <label for="ingredientes">Ingredientes:</label>
-      <textarea id="ingredientes" placeholder="Liste os ingredientes"></textarea>
-    </div>
-
-    <div class="modo-preparo">
-      <label for="modo-preparo">Modo de Preparo:</label>
-      <textarea id="modo-preparo" placeholder="Descreva o modo de preparo"></textarea>
-    </div>
-
-    <div class="imagens">
-      <label>Imagens do prato:</label>
-      <div class="uploads">
-        <input type="file" id="imagem">
+    <form id="form-receita">
+      <div class="nome-prato">
+        <label for="nome-prato">Nome do Prato:</label>
+        <input type="text" id="nome-prato" placeholder="Digite o nome do prato">
       </div>
-    </div>
-
-    <button class="botao-receita" type="submit">Cadastrar Receita</button>
+  
+      <div class="ingredientes">
+        <label for="ingredientes">Ingredientes:</label>
+        <textarea id="ingredientes" placeholder="Liste os ingredientes"></textarea>
+      </div>
+      <div class="modo-preparo">
+        <label for="modo-preparo">Modo de Preparo:</label>
+        <textarea id="modo-preparo" placeholder="Descreva o modo de preparo"></textarea>
+      </div>
+      <div class="imagens">
+        <label>Imagens do prato:</label>
+        <div class="uploads">
+          <input type="file" id="imagem" accept="image/*">
+        </div>
+      </div>
+      <button class="botao-receita" type="submit">Cadastrar Receita</button>
+    </form>
   </main>
-
   <footer class="rodape-bg">
     <div class="rodape">
       <picture class="logo">
-        <img src="img/SouChefeLogo.svg" alt="Logo SouChefe">
+        <a href="./index.html"><img src="img/SouChefeLogo.svg" alt="Logo SouChefe"></a>
       </picture>
       <div class="rodape-info">
         <nav class="menu-rodape">
           <a href="index.html">Home</a>
           <a href="sobre.html">Sobre nós</a>
-          <a href="#">Receitas</a>
+          <a href="./cadastro.html">Cadastro</a>
           <a href="login.html">Login</a>
         </nav>
         <div class="social">
@@ -64,6 +61,7 @@
       </div>
     </div>
   </footer>
+  <script src="./script/cadastro.js"></script>
 </body>
 
 </html>

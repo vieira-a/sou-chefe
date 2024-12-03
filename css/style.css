@@ -15,4 +15,7 @@
 @import "./cadastrado/cadastrado.css";
 
 /* Cadastro */
-@import "cadastrado/cadastrado.css";
+@import "./cadastro/cadastro.css";
+
+/* Responsividade */
+@import "/css/responsividade/mediaqueries.css";

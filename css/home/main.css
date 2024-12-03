@@ -25,7 +25,6 @@ body {
   border: none;
   border-radius: 10px;
   background: rgba(250, 250, 250, 0.93);
-  outline: none;
 }
 
 /* Seção de introdução */
@@ -82,4 +81,62 @@ main {
 
 .botao-receita:hover {
   background-color: #5d2c14;
+}
+
+/* Estilos para tablet */
+@media (max-width: 768px) {
+  .cabecalho {
+    padding: 5px;
+    justify-content: flex-start;
+  }
+
+  .barra-pesquisa {
+    width: 100%;
+  }
+
+  .intro h1 {
+    font-size: 42px;
+    margin-top: 30px;
+  }
+
+  .grid-receitas {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 5%;
+  }
+
+  .botao-receita {
+    font-size: 16px;
+    padding: 12px 60px;
+  }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .barra-pesquisa {
+    height: 35px;
+    font-size: 15px;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+
+  .grid-receitas {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 5%;
+  }
+
+  .botao-receita {
+    font-size: 14px;
+    padding: 10px 50px;
+  }
 }

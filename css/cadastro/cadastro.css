@@ -1,7 +1,12 @@
+.main-cadastro {
+  text-align: center;
+}
+
 body {
   font-family: "Rancho", sans-serif;
   background: #dfb39a;
   color: #5a2b2b;
+  margin: 0;
 }
 
 header {
@@ -12,56 +17,61 @@ header {
   background-color: #f0c4b5;
 }
 
-header .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-#pesquisa {
+header .barra-pesquisa {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-size: 1em;
 }
 
 .main-cadastro {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: auto auto;
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 30px;
   padding: 20px;
 }
 
-.nome-prato {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-}
-
-.nome-prato label,
-.ingredientes label,
-.modo-preparo label,
-.imagens label {
-  font-size: 30px;
+/* .nome-prato {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
 .ingredientes {
-  grid-column: 1 / span 1;
-  grid-row: 2 / span 1;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 .modo-preparo {
-  grid-column: 2 / span 2;
-  grid-row: 1 / span 1;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
 }
 
 .imagens {
-  grid-column: 2 / span 2;
-  grid-row: 2 / span 1;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+} */
+
+.botao-receita {
+  grid-column: 1 / 4;
+  padding: 10px 20px;
+  background-color: #f0c4b5;
+  color: #5a2b2b;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  justify-self: center;
+  margin-top: 30px;
+}
+
+.botao-receita:hover {
+  background-color: #e0a997;
 }
 
 label {
   display: block;
   font-size: 1.2em;
-  margin-bottom: 10px;
+  margin-block: 10px;
 }
 
 input[type="text"],
@@ -74,29 +84,13 @@ textarea {
 }
 
 textarea {
-  height: 100px;
+  height: 300px;
   resize: none;
 }
 
 .uploads input[type="file"] {
   display: block;
   margin-bottom: 10px;
-}
-
-button {
-  grid-column: 1 / span 3;
-  padding: 10px 20px;
-  background-color: #f0c4b5;
-  color: #5a2b2b;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  justify-self: center;
-}
-
-button:hover {
-  background-color: #e0a997;
 }
 
 footer {
@@ -121,4 +115,70 @@ footer .social a {
   margin-right: 10px;
   color: #5a2b2b;
   text-decoration: none;
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+  .main-cadastro {
+    grid-template-columns: 1fr; /* Todos os elementos em uma única coluna */
+    gap: 20px; /* Ajusta o espaçamento */
+    padding: 10px;
+  }
+
+  .botao-receita {
+    width: 100%; /* Botão ocupa toda a largura */
+    justify-self: center;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 1em;
+  }
+
+  textarea {
+    height: 200px; /* Reduz altura para dispositivos menores */
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header .barra-pesquisa {
+    width: 100%;
+  }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  .main-cadastro {
+    grid-template-columns: 1fr;
+    padding: 5px;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  .botao-receita {
+    font-size: 0.9em;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  footer nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer nav a {
+    font-size: 0.9em;
+  }
+
+  footer {
+    padding: 5px;
+  }
 }
