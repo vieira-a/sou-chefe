@@ -61,6 +61,7 @@ header .barra-pesquisa {
   font-size: 1em;
   cursor: pointer;
   justify-self: center;
+  margin-top: 30px;
 }
 
 .botao-receita:hover {
@@ -70,7 +71,7 @@ header .barra-pesquisa {
 label {
   display: block;
   font-size: 1.2em;
-  margin-bottom: 10px;
+  margin-block: 10px;
 }
 
 input[type="text"],
@@ -114,4 +115,70 @@ footer .social a {
   margin-right: 10px;
   color: #5a2b2b;
   text-decoration: none;
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+  .main-cadastro {
+    grid-template-columns: 1fr; /* Todos os elementos em uma única coluna */
+    gap: 20px; /* Ajusta o espaçamento */
+    padding: 10px;
+  }
+
+  .botao-receita {
+    width: 100%; /* Botão ocupa toda a largura */
+    justify-self: center;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 1em;
+  }
+
+  textarea {
+    height: 200px; /* Reduz altura para dispositivos menores */
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header .barra-pesquisa {
+    width: 100%;
+  }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  .main-cadastro {
+    grid-template-columns: 1fr;
+    padding: 5px;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  .botao-receita {
+    font-size: 0.9em;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  footer nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer nav a {
+    font-size: 0.9em;
+  }
+
+  footer {
+    padding: 5px;
+  }
 }
