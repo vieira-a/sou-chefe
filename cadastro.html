@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Receitas - SouChefe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <input type="text" class="barra-pesquisa" placeholder="Search">
+  </header>
+
+  <main class="main-cadastro">
+    <div class="nome-prato">
+      <label for="nome-prato">Nome do Prato:</label>
+      <input type="text" id="nome-prato" placeholder="Digite o nome do prato">
+    </div>
+
+    <div class="ingredientes">
+      <label for="ingredientes">Ingredientes:</label>
+      <textarea id="ingredientes" placeholder="Liste os ingredientes"></textarea>
+    </div>
+
+    <div class="modo-preparo">
+      <label for="modo-preparo">Modo de Preparo:</label>
+      <textarea id="modo-preparo" placeholder="Descreva o modo de preparo"></textarea>
+    </div>
+
+    <div class="imagens">
+      <label>Imagens do prato:</label>
+      <div class="uploads">
+        <input type="file" id="imagem">
+      </div>
+    </div>
+
+    <button class="botao-receita" type="submit">Cadastrar Receita</button>
+  </main>
+
+  <footer class="rodape-bg">
+    <div class="rodape">
+      <picture class="logo">
+        <img src="img/SouChefeLogo.svg" alt="Logo SouChefe">
+      </picture>
+      <div class="rodape-info">
+        <nav class="menu-rodape">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre nós</a>
+          <a href="#">Receitas</a>
+          <a href="login.html">Login</a>
+        </nav>
+        <div class="social">
+          <a href="#"><img src="img/social/icons8-facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="img/social/icons8-twitterx.svg" alt="Twitter"></a>
+          <a href="#"><img src="img/social/icons8-youtube.svg" alt="YouTube"></a>
+        </div>
+        <p>© Copyright 2024 - SouChefe</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

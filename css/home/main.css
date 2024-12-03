@@ -1,0 +1,85 @@
+body {
+  background: #dfb39a;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: #dfb39a;
+  max-width: 475px;
+  margin-inline: auto;
+}
+
+.barra-pesquisa {
+  display: flex;
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 400;
+  width: 475px;
+  height: 40px;
+  padding: 8px;
+  align-items: center;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 10px;
+  background: rgba(250, 250, 250, 0.93);
+  outline: none;
+}
+
+/* Seção de introdução */
+.intro {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.intro h1 {
+  font-family: "Rancho";
+  font-weight: 400;
+  font-size: 54px;
+  color: #621d06;
+  margin-top: 50px;
+}
+
+/* Grade de imagens */
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.grid-receitas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0 10%;
+  margin-bottom: 20px;
+}
+
+.grid-receitas img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão central */
+.botao-central {
+  text-align: center;
+  margin: 40px 0 100px;
+}
+
+.botao-receita {
+  background: #621d06;
+  color: #fff;
+  border: none;
+  padding: 15px 80px;
+  font-size: 18px;
+  border-radius: 39.901px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.botao-receita:hover {
+  background-color: #5d2c14;
+}

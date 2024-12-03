@@ -1,0 +1,18 @@
+/* Global */
+@import "./global/global.css";
+@import "./global/footer.css";
+
+/* Home */
+@import "./home/main.css";
+
+/* Login */
+@import "./login/login.css";
+
+/* Sobre */
+@import "./sobre/sobre.css";
+
+/* Cadastrado */
+@import "./cadastrado/cadastrado.css";
+
+/* Cadastro */
+@import "cadastrado/cadastrado.css";

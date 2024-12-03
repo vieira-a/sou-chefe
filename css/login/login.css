@@ -1,0 +1,99 @@
+.fundo {
+  background: url("../../img/SouChefeBG.svg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-login {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
+  padding: 20px;
+  width: 312px;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  align-self: center;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.formulario-login h1 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  color: #d9a07f;
+  margin-bottom: 20px;
+}
+
+.grupo-input {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.grupo-input label {
+  display: none;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.grupo-input input {
+  font-family: "Raleway";
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.grupo-input .input::after {
+  content: "";
+  display: block;
+  background: #ccc;
+  height: 1px;
+  width: 80%;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.botao {
+  background-color: #d9a07f;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #c4896e;
+}
+
+.link-cadastro {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #d9a07f;
+  text-decoration: underline;
+}
+
+.link-cadastro:hover {
+  text-decoration: underline;
+}

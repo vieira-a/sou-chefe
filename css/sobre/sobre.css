@@ -1,0 +1,26 @@
+main {
+  color: #621d06;
+  font-family: Rancho;
+}
+
+main h1 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+main h2 {
+  max-width: 50ch;
+}
+
+main ul {
+  margin-top: 5px;
+}
+
+main p {
+  font-size: 20px;
+}
+
+.main-info {
+  margin-bottom: 20px;
+}

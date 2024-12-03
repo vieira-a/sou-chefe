@@ -1,0 +1,124 @@
+body {
+  font-family: "Rancho", sans-serif;
+  background: #dfb39a;
+  color: #5a2b2b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0c4b5;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#pesquisa {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.main-cadastro {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nome-prato {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.nome-prato label,
+.ingredientes label,
+.modo-preparo label,
+.imagens label {
+  font-size: 30px;
+}
+
+.ingredientes {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.modo-preparo {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.imagens {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.uploads input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  grid-column: 1 / span 3;
+  padding: 10px 20px;
+  background-color: #f0c4b5;
+  color: #5a2b2b;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  justify-self: center;
+}
+
+button:hover {
+  background-color: #e0a997;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0c4b5;
+  margin-top: 20px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer nav a {
+  color: #5a2b2b;
+  text-decoration: none;
+}
+
+footer .social a {
+  margin-right: 10px;
+  color: #5a2b2b;
+  text-decoration: none;
+}

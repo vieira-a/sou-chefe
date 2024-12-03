@@ -1,0 +1,83 @@
+body {
+  font-family: "Rancho", sans-serif;
+  background: #dfb39a;
+  color: #5a2b2b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0c4b5;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#pesquisa {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+main .receita {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.coluna {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.imagens .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.imagens .galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.ingredientes ul,
+.preparo ol {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0c4b5;
+  margin-top: 20px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer nav a {
+  color: #5a2b2b;
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
