@@ -16,3 +16,6 @@
 
 /* Cadastro */
 @import "./cadastro/cadastro.css";
+
+/* Responsividade */
+@import "/css/responsividade/mediaqueries.css";

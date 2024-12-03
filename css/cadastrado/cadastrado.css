@@ -81,3 +81,58 @@ footer p {
   margin-top: 10px;
   font-size: 0.9em;
 }
+
+/* Estilos para Celulares */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #pesquisa {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  main .receita {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .coluna {
+    margin-bottom: 20px;
+  }
+
+  footer nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer p {
+    font-size: 0.8em;
+  }
+}
+
+/* Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  main .receita {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .coluna {
+    padding: 10px;
+  }
+
+  #pesquisa {
+    width: 70%;
+  }
+
+  footer nav {
+    gap: 12px;
+  }
+}
