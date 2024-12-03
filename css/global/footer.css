@@ -1,6 +1,7 @@
 .rodape-bg {
   background-color: #ffffff;
   border-top: 1px solid #d9a07f;
+  width: 100%; /* Garante que ocupa toda a largura */
 }
 
 .rodape {
